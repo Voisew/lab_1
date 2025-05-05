@@ -20,4 +20,5 @@ res = a + b * c
 total = x / y + -z
 result = (a - b) * (c + d)
 # Тестовые примеры
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c0065546-450b-489b-a736-e1954c0c40eb)
+
