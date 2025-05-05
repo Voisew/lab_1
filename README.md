@@ -21,4 +21,8 @@ total = x / y + -z
 result = (a - b) * (c + d)
 # Тестовые примеры
 ![image](https://github.com/user-attachments/assets/c0065546-450b-489b-a736-e1954c0c40eb)
+![image](https://github.com/user-attachments/assets/44d4e66d-26a5-4810-891c-efc37d5f72ca)
+![image](https://github.com/user-attachments/assets/11de4be8-7bdd-4cf1-a464-796313d9b0b6)
+
+
 
