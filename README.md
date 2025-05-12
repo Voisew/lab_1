@@ -53,42 +53,11 @@
 3. final double d = -1.5;
 # Разработка грамматики
 Определим грамматику вещественных констант языка Java G[‹START›] в нотации Хомского с продукциями P:
-1. <START> ->'final ' <DOUBLE_DEC>
-2. <DOUBLE_DEC> -> 'double ' <IDENTIFY>
-3. <IDENTIFY> -> Symbols <IDREM>
-4. <IDREM> -> Symbols <IDREM>
-5. <IDREM> -> '=' <NUMBER>
-6. <NUMBER> -> digit <NUMBERREM>
-7. <NUMBER> -> '-' digit <NUMBERREM>
-8. <NUMBER> -> '+' digit <NUMBERREM>
-9. <NUMBERREM> -> digit <NUMBERREM>
-10. <NUMBERREM> -> '.' <DECIMAL>
-11. <DECIMAL> -> digit <DECIMALREM>
-12. <DECIMALREM> -> digit <DECIMALREM>
-13. <DECIMALREM> -> <END>
-14. <END> -> ';'
-•	Symbols -> 'a'|'b'|'c'|...|'z'|'A'|'B'|'C'|...|'Z'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'|'0'
-•	digit -> '1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'|'0'
-Следуя формальному определению грамматики, представим G[<START>] ее составляющими:
-•	Z = <START>;
-•	VT = {a, b, c, ..., z, A, B, C, ..., Z, _, =, +, -, ’, ;, 0, 1, 2, ..., 9};
-•	VN = {<START>,<DOUBLE_DEC>,<IDENTIFY>,<IDREM>,<NUMBER>,<NUMBERREM>,<DECIMAL>,<DECIMALREM>,<END>};
+![image](https://github.com/user-attachments/assets/494c9c80-6649-4f95-bd61-56dfb92e5bc1)
+
 # Классификация грамматики 
 Правила 1-14 относятся к классу праворекурсивных продукций (A → aB | a | ε):
-1. <START> ->'final ' <DOUBLE_DEC>
-2. <DOUBLE_DEC> -> 'double ' <IDENTIFY>
-3. <IDENTIFY> -> Symbols <IDREM>
-4. <IDREM> -> Symbols <IDREM>
-5. <IDREM> -> '=' <NUMBER>
-6. <NUMBER> -> digit <NUMBERREM>
-7. <NUMBER> -> '-' digit <NUMBERREM>
-8. <NUMBER> -> '+' digit <NUMBERREM>
-9. <NUMBERREM> -> digit <NUMBERREM>
-10. <NUMBERREM> -> '.' <DECIMAL>
-11. <DECIMAL> -> digit <DECIMALREM>
-12. <DECIMALREM> -> digit <DECIMALREM>
-13. <DECIMALREM> -> <END>
-14. <END> -> ';'
+![image](https://github.com/user-attachments/assets/3b3565a8-34c6-4216-ba5e-8cac7d82d18c)
 
 Отметим, что правила должны быть либо только леворекурсивными, либо только праворекурсивными. Комбинация тех и других не допускается. Данная грамматика содержит только праворекурсивные правила и, следовательно, является полностью автоматной.
  
