@@ -88,6 +88,32 @@
 
 ## Лабораторная работа 4 
 ### Нейтрализация ошибок (метод Айронса)
+# Вариант задания 
+Объявление вещественной константы с инициализацией на
+языке Java
+Строка: final double PI = 3.14159;
+# Примеры допустимых строк
+1. final double a = 2.71828;
+2. final double c = 0.0;
+3. final double d = -1.5;
+# Разработка грамматики
+Определим грамматику вещественных констант языка Java G[‹START›] в нотации Хомского с продукциями P:
+![image](https://github.com/user-attachments/assets/494c9c80-6649-4f95-bd61-56dfb92e5bc1)
+
+# Классификация грамматики 
+Правила 1-14 относятся к классу праворекурсивных продукций (A → aB | a | ε):
+
+![image](https://github.com/user-attachments/assets/3b3565a8-34c6-4216-ba5e-8cac7d82d18c)
+
+Отметим, что правила должны быть либо только леворекурсивными, либо только праворекурсивными. Комбинация тех и других не допускается. Данная грамматика содержит только праворекурсивные правила и, следовательно, является полностью автоматной.
+ 
+# Граф конечного автомата 
+![image](https://github.com/user-attachments/assets/32ea1c7a-b45b-4b2b-9767-ef935447651c)
+# Тестовые примеры
+![image](https://github.com/user-attachments/assets/e99a0bfa-acd9-43ef-b9d0-5b52212a16fe)
+![image](https://github.com/user-attachments/assets/9d1974a7-efbf-4942-9f9d-3bbee0e31295)
+![image](https://github.com/user-attachments/assets/e6ae62c9-f356-427c-8932-a9cccaf51ce6)
+![image](https://github.com/user-attachments/assets/5bb4f513-cadb-47f7-a6eb-6731b4e0d963)
 
 ## Лабораторная работа 5
 ### Включение семантики в анализатор. Создание внутренней формы представления программы.
