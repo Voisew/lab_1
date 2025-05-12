@@ -141,5 +141,25 @@ result = (a - b) * (c + d)
 ![image](https://github.com/user-attachments/assets/44d4e66d-26a5-4810-891c-efc37d5f72ca)
 ![image](https://github.com/user-attachments/assets/11de4be8-7bdd-4cf1-a464-796313d9b0b6)
 
-
-
+# Лабораторная работа 6
+## Задачи
+1.Построить РВ, описывающее шестнадцатеричный код (HEX) 
+цвета (длиной 6).
+2.Построить РВ, описывающее номера карт, принадлежащих
+платежной системе Visa.
+3.Построить РВ для поиска HSL-кода цвета. Пример: hsl(120,
+50%, 40%) 
+## Регулярные выражения
+Задача 1
+HEX: начинается с #, далее ровно 6 символов 0-9 или a-f (в любом регистре) <br>
+(@"#([0-9a-fA-F]{6})<br>
+Задача 2
+Visa: начинается с 4, далее 12–18 цифр (обычно 16) <br>
+(@"\b4[0-9]{12}(?:[0-9]{3})?\b) <br>
+Задача 3
+  hsl(число, процент, процент), возможны пробелы <br>
+ @"hsl\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*\)" <br>
+ ## Тестовые примеры 
+ ![image](https://github.com/user-attachments/assets/8f9cc647-4a93-4783-bed9-4dd05a2db961)
+![image](https://github.com/user-attachments/assets/5aa32a4f-977d-4e7b-b756-36a36f1a5fde)
+![image](https://github.com/user-attachments/assets/547bab74-c5b7-4fe1-bdcf-186b45eae742)
